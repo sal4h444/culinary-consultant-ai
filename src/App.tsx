@@ -9,7 +9,7 @@ import { ChefHat, Utensils, Loader2, CheckCircle2, ShoppingCart, CalendarDays, C
 import { motion, AnimatePresence } from 'motion/react';
 
 console.log("Vite Env Check:", import.meta.env.VITE_GEMINI_API_KEY ? "Key Found" : "Key is UNDEFINED");
-const ai = new GoogleGenAI({ apiKey: process.env.VITE_GEMINI_API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const MEAL_TYPES = [
   'Breakfast', 'Brunch', 'Lunch', 'Dinner', 'Snack',
