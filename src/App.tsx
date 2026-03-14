@@ -8,7 +8,7 @@ import { GoogleGenAI, Type } from '@google/genai';
 import { ChefHat, Utensils, Loader2, CheckCircle2, ShoppingCart, CalendarDays, ChevronDown, ChevronUp, BookOpen, Clock, Flame, Lightbulb } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const ai = new GoogleGenAI(import.meta.env.VITE_GEMINI_API_KEY);
 
 const MEAL_TYPES = [
   'Breakfast', 'Brunch', 'Lunch', 'Dinner', 'Snack',
