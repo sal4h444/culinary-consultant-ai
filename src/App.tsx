@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { GoogleGenAI, Type } from '@google/genai';
 import { ChefHat, Utensils, Loader2, CheckCircle2, ShoppingCart, CalendarDays, ChevronDown, ChevronUp, BookOpen, Clock, Flame, Lightbulb } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-
+console.log("Vite Env Check:", import.meta.env.VITE_GEMINI_API_KEY ? "Key Found" : "Key is UNDEFINED");
 const ai = new GoogleGenAI(import.meta.env.VITE_GEMINI_API_KEY);
 
 const MEAL_TYPES = [
